@@ -1,23 +1,25 @@
-// import NxWelcome from './nx-welcome';
-// import {useState} from "react"
-
+// import { RecoilRoot } from 'recoil';
+import React, { useState } from 'react';
 import Form from "../form"
+// import TodoList from "../todolist"
+
+
 
 export function App() {
 
-  // const [todo, setTodo] = useSate ([])
-
   return (
     <>
-      <div className="p-[200px]">
-        {/* <NxWelcome title="org" /> */}
-        <h1 className="text-[50px] font-bold">Todo List </h1>
+      {/* <RecoilRoot> */}
+        <div className="p-[200px]">
+          <h1 className="text-[50px] font-bold">Todo List </h1>
 
-        {/* form component */}
-        <div className="py-10">
-          <Form />
+          {/* form component */}
+          <div className="py-10">
+            <Form />
+            {/* <TodoList/> */}
+          </div>
         </div>
-      </div>
+      {/* </RecoilRoot> */}
     </>
   );
 }
