@@ -42,16 +42,18 @@ export function Form() {
           ))}
         </ul>
 
-        <form className=" flex gap-[5px]">
-          <div  className="text-[30px] text-[#8c11ce]">
+        {/* forms */}
+
+        <form className="flex gap-[5px] ">
+          <div className="text-[30px] text-[#8c11ce] ">
             <button className="font-bold">
-              <IoAddCircle className="" />
+              <IoAddCircle className="pt-" />
             </button>
           </div>
 
-          <div className=" flex justify-between gap-[20px] ">
+          <div className="flex justify-between max-sm:gap-5 md:gap-[50px]  lg:gap-[20px] ">
             <input
-              className="px-5 w-[700px]"
+              className=" max-sm:px-2 lg:px-5 max-sm:w-[200px] xl:w-[700px]"
               type="text"
               value={todo}
               onChange={handleInputChange}
@@ -60,7 +62,7 @@ export function Form() {
             />
             <button
               onClick={handleFormSubmit}
-              className="px-6 py-2 bg-[#8c11ce] text-[#fff] rounded-lg"
+              className=" max-sm:w-[100px] max-sm:px-4 md:px-5  lg:px-6 lg:py-2 bg-[#8c11ce] text-[#fff] rounded-lg"
             >
               Add Item
             </button>

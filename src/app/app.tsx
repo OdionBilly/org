@@ -1,7 +1,5 @@
-// import { RecoilRoot } from 'recoil';
-import React, { useState } from 'react';
+
 import Form from "../form"
-// import TodoList from "../todolist"
 
 
 
@@ -10,13 +8,12 @@ export function App() {
   return (
     <>
       {/* <RecoilRoot> */}
-        <div className="p-[200px]">
-          <h1 className="text-[50px] font-bold">Todo List </h1>
+        <div className=" max-sm:p-[50px] md:p-[100px] lg:p-[200px]  ">
+          <h1 className=" max-sm:text-[35px] lg:text-[50px] font-bold">Todo List </h1>
 
           {/* form component */}
           <div className="py-10">
             <Form />
-            {/* <TodoList/> */}
           </div>
         </div>
       {/* </RecoilRoot> */}
